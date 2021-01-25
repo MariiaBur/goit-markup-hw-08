@@ -1,0 +1,40 @@
+.quality {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.quality-list {
+  display: flex;
+}
+
+.quality-list-item {
+  margin-right: 30px;
+  width: 270px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.quality-icon-decor {
+  text-align: center;
+  background: $light-btn;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.quality-list-title {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+
+  color: $secondary-title;
+
+  margin-bottom: 10px;
+}
+
+.quality-list-text {
+  @include font(400, 14px, 1.71, 0.03em);
+
+  color: $secondary-text;
+}

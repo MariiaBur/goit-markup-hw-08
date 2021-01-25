@@ -1,0 +1,14 @@
+.modal-btn {
+  font-family: $main-font;
+  @include font(700, 16px, 1.87, 0.06em);
+
+  color: $light-theme;
+  background-color: $accent-color;
+
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  cursor: pointer;
+}
