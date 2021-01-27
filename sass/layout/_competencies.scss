@@ -2,6 +2,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.quality-list-item {
+  margin-bottom: 30px;
+  width: 450px;
+  &:nth-child(n + 4) {
+    margin-bottom: 0px;
+  }
+}
 
 .quality-icon-decor {
   text-align: center;
@@ -34,7 +41,6 @@
   }
   .quality-list-item {
     margin-right: 30px;
-    margin-bottom: 30px;
     width: 354px;
     &:nth-child(2n) {
       margin-right: 0;
@@ -60,7 +66,6 @@
     flex-wrap: nowrap;
   }
   .quality-list-item {
-    margin-right: 30px;
     width: 270px;
     &:nth-child(2n) {
       margin-right: 30px;
