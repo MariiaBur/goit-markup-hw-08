@@ -1,6 +1,6 @@
 .logo {
   font-family: $secondary-font;
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.167, 0.03em);
 
   color: $primary;
 }
@@ -13,7 +13,7 @@
 
 .logo-footer {
   font-family: $secondary-font;
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.167, 0.03em);
   color: $primary;
 
   margin-bottom: 20px;
