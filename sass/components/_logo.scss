@@ -23,3 +23,15 @@
 .logo-alt {
   color: $light-theme;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo-footer,
+  .logo {
+    @include font(700, 26px, 1.192, 0.03em);
+  }
+}
