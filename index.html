@@ -21,51 +21,47 @@
      <header class="header">
       <div class="container">
         <nav class="nav">
-          <a class="logo link" href="./" lang="en"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <ul class="nav-list list">
-            <li class="nav-list-item">
-              <a class="nav-list-link current link" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <button type="button" class="menu-button is-open">
+          <a class="logo link" href="./" lang="en"><span class="logo-accent">Web</span>Studio</a>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="menu-burger" href="images/decor/sprite-optimize.svg#close"></use>
-              <use class="icone-close" href="images/decor/sprite-optimize.svg#menu-burger"></use>
+              <use class="menu-burger" href="images/decor/sprite-optimize.svg#menu-burger"></use>
+              <use class="icon-close" href="images/decor/sprite-optimize.svg#close"></use>
             </svg>
           </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav-list list">
+              <li class="nav-list-item">
+                <a class="nav-list-link current link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <address class="address">
+              <ul class="contact list">
+                <li class="contact-list">
+                  <a class="contact-link link" href="mailto:info@devstudio.com"><svg width="16px" height="12px"
+                      class="contact-icon">
+                      <use href="images/decor/sprite-optimize.svg#email"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact-list">
+                  <a class="contact-link link" href="tel:+380961111111">
+                    <svg width="10px" height="16px" class="contact-icon">
+                      <use href="images/decor/sprite-optimize.svg#tel"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </nav>
-        <address class="address">
-          <ul class="contact list">
-            <li class="contact-list">
-              <a class="contact-link link" href="mailto:info@devstudio.com"
-                ><svg width="16px" height="12px" class="contact-icon">
-                  <use href="images/decor/sprite-optimize.svg#email"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contact-list">
-              <a class="contact-link link" href="tel:+380961111111">
-                <svg width="10px" height="16px" class="contact-icon">
-                  <use href="images/decor/sprite-optimize.svg#tel"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        
       </div>
     </header>
     <main> 
@@ -578,5 +574,6 @@
       </div>
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
