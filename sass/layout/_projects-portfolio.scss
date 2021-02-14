@@ -36,6 +36,15 @@
   color: $secondary-title;
 
   margin-bottom: 4px;
+
+  .break {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .break {
+      display: initial;
+    }
+  }
 }
 
 .filter-item {
@@ -44,26 +53,17 @@
   color: $secondary-text;
 }
 
-.container .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .projects-list-item {
   .projects-list & {
-    min-width: 370px;
+    min-width: 450px;
     box-sizing: border-box;
-    margin-right: 30px;
+
     margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     background-color: $light-theme;
-  }
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
   }
 }
 
@@ -91,7 +91,7 @@
 
   color: $light-theme;
 
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
 
@@ -125,6 +125,33 @@
   .filters-btn {
     margin-bottom: 0;
   }
+
+  .container .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects-list-item {
+    .projects-list & {
+      min-width: 354px;
+      box-sizing: border-box;
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      background-color: $light-theme;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+      margin-right: 0;
+    }
+  }
+  .projects-list-description {
+    padding: 49px 24px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .filters-list-btn {
@@ -133,5 +160,25 @@
   .projects {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .projects-list-item {
+    .projects-list & {
+      min-width: 370px;
+      box-sizing: border-box;
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      background-color: $light-theme;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+    .projects-list-description {
+      padding: 63px 24px;
+    }
   }
 }
